@@ -12,10 +12,9 @@ help
 function create_user {
 echo "============== creation of user started ============="
 
-read -p "enter the username:" username
+read -p "enter the username:" $username
 
-read -p "enter the password:" password
-
+read -p "enter the password:" $password
 
 sudo useradd -m "$username"
 
